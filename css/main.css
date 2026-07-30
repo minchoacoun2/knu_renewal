@@ -176,7 +176,19 @@ body{
 
 /* 3 */
 .notice{
+  min-height: 100vh;
   padding: 100px 0;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/notice_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.notice > .inner{
+  width: 100%;
 }
 
 .sec-title{
@@ -334,11 +346,19 @@ body{
 
 .bg-section{
   width: 100%;
+  min-height: 100vh;
   padding: 100px 0;
+  display: flex;
+  align-items: center;
   background-image: url(../images/calendar_bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.bg-section > .inner{
+  width: 100%;
 }
 
 .cal-top {
