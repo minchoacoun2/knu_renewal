@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캠퍼스 라이프 | 경북대학교</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="campus-page">
+  <div id="wrap">
+    <header class="intro-header">
+      <div class="intro-header-inner">
+        <a class="intro-logo" href="index.html"><img src="images/main_logo.png" alt="경북대학교"></a>
+        <nav class="intro-gnb" aria-label="주요 메뉴">
+          <a href="introduce.html">대학소개</a>
+          <a href="admission.html">입학안내</a>
+          <a href="education.html">교육·연구</a>
+          <a href="campus.html" class="active">캠퍼스 라이프</a>
+          <a href="promotion.html">대학홍보</a>
+        </nav>
+        <div class="intro-utils">
+          <button class="search-icon" type="button" aria-label="검색"></button>
+          <button class="menu-icon" type="button" aria-label="전체 메뉴"><i></i><i></i><i></i></button>
+          <a href="https://appfn.knu.ac.kr/login.knu?agentId=4" class="system-link">통합정보시스템</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="campus-hero"><h1>캠퍼스 라이프</h1></section>
+
+      <nav class="location-bar campus-location" aria-label="현재 위치">
+        <a href="index.html" class="home-link" aria-label="홈"><img src="images/home_icon.png" alt=""></a>
+        <button type="button">캠퍼스 라이프 <span></span></button>
+        <button type="button">학생지원기관 <span></span></button>
+        <button type="button">도서관 <span></span></button>
+        <div class="location-spacer"></div>
+        <button class="size-button increase" type="button" aria-label="글자 크게">+</button>
+        <button class="size-button decrease" type="button" aria-label="글자 작게">−</button>
+        <button class="size-button reset-size" type="button" aria-label="글자 크기 초기화"><img src="images/reset_img.png" alt=""></button>
+      </nav>
+
+      <section class="campus-content">
+        <h2>학생지원기관</h2>
+        <article class="library-card">
+          <h3>도서관</h3>
+          <div class="library-layout">
+            <img src="images/life_img.png" class="library-image" alt="경북대학교 도서관 내부">
+            <div class="library-info">
+              <p class="library-contact"><img src="images/life_phone_icon.png" alt="">경북대학교 도서관: 홈페이지 내 서비스별 안내 전화번호</p>
+              <a href="#" class="library-link">도서관 홈페이지</a>
+              <h4>비전 및 전략:</h4>
+              <div class="library-visions">
+                <div class="vision-item">
+                  <span><img src="images/life_icon1.png" alt=""></span>
+                  <p>거침없는<br>성장을 위한<br>학습정보자원</p>
+                </div>
+                <i></i>
+                <div class="vision-item">
+                  <span><img src="images/life_icon2.png" alt=""></span>
+                  <p>지식의 접근성을<br>확장하는<br>교육·연구 지원 서비스</p>
+                </div>
+                <i></i>
+                <div class="vision-item">
+                  <span><img src="images/life_icon3.png" alt=""></span>
+                  <p>더 큰 세계를<br>준비하는<br>대학도서관</p>
+                </div>
+              </div>
+              <strong class="library-slogan">융합 교육의 중심, 경북대학교 도서관</strong>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="intro-footer">
+      <div class="intro-footer-links">
+        <div>
+          <a href="#">대학정보공시</a><a href="#">정보공개</a><a href="#">청렴행정</a><a href="#" class="muted">개인정보처리방침</a>
+        </div>
+        <a href="#" class="campus-sites">교내사이트안내 <span>→</span></a>
+      </div>
+      <div class="intro-footer-bottom">
+        <img src="images/footer_logo.png" class="intro-footer-logo" alt="경북대학교">
+        <div class="intro-address">
+          <p>대구캠퍼스 (41566) 대구광역시 북구 대학로 80 (산격동,경북대학교) 학교안내전화 053-950-5114&nbsp; | &nbsp;당직실 053-950-6000</p>
+          <p>상주캠퍼스 (37224) 경상북도 상주시 경상대로 2559</p>
+          <p>Copyright(c) Kyungpook National University. All rights reserved.</p>
+        </div>
+        <div class="intro-footer-sns">
+          <a href="https://www.facebook.com/knuofficial1946"><img src="images/footer_facebook.png" alt="페이스북"></a>
+          <a href="https://www.instagram.com/knuofficial/"><img src="images/footer_insta.png" alt="인스타그램"></a>
+          <a href="https://www.youtube.com/channel/UCzwooQuzcU_uBSEMX3G7cDw"><img src="images/footer_youtube.png" alt="유튜브"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+  <script>
+    (() => {
+      const root = document.documentElement;
+      let scale = 100;
+      const apply = () => root.style.fontSize = scale + '%';
+      document.querySelector('.increase').addEventListener('click', () => { scale = Math.min(scale + 10, 130); apply(); });
+      document.querySelector('.decrease').addEventListener('click', () => { scale = Math.max(scale - 10, 80); apply(); });
+      document.querySelector('.reset-size').addEventListener('click', () => { scale = 100; apply(); });
+    })();
+  </script>
+</body>
+</html>
